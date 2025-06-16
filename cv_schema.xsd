@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="telephoneType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\+[\d]{1,4}[0-9]{6,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="anneePeriode">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{4}-\d{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ROOT -->
+  <xs:element name="portfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="identite" type="identiteType"/>
+        <xs:element name="formation" type="formationType"/>
+        <xs:element name="experience" type="experienceType"/>
+        <xs:element name="competences" type="competencesType"/>
+        <xs:element name="projets" type="projetsType"/>
+        <xs:element name="langues" type="languesType"/>
+        <xs:element name="interets" type="interetsType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="identiteType">
+    <xs:sequence>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="prenom" type="xs:string"/>
+      <xs:element name="age" type="xs:integer"/>
+      <xs:element name="email" type="xs:string"/>
+      <xs:element name="telephone" type="telephoneType"/>
+      <xs:element name="adresse" type="xs:string"/>
+      <xs:element name="linkedin" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="formationType">
+    <xs:sequence>
+      <xs:element name="etape" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="annee" type="anneePeriode" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="experienceType">
+    <xs:sequence>
+      <xs:element name="poste" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="titre" type="xs:string"/>
+            <xs:element name="entreprise" type="xs:string"/>
+            <xs:element name="lieu" type="xs:string" minOccurs="0"/>
+            <xs:element name="periode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="competencesType">
+    <xs:sequence>
+      <xs:element name="categorie" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="nom" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="projetsType">
+    <xs:sequence>
+      <xs:element name="projet" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="titre" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="periode" type="anneePeriode"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="languesType">
+    <xs:sequence>
+      <xs:element name="langue" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="nom" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="interetsType">
+    <xs:sequence>
+      <xs:element name="interet" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
