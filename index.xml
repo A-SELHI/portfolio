@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cv_bootstrap.xslt"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="cv_schema.xsd">
+
+  <identite>
+    <nom>Abdelillah</nom>
+    <prenom>SELHI</prenom>
+    <age>23</age>
+    <email>abdelillahselhi@gmail.com</email>
+    <telephone>+3365172000</telephone>
+    <adresse>95370 Montigny-lès-Cormeilles</adresse>
+    <linkedin>@abdelillah_selhi</linkedin>
+  </identite>
+
+  <formation>
+    <etape annee="2023-2026">Ingénieur informatique - Ecole Sup Galilée (Université Sorbonne Paris Nord)</etape>
+    <etape annee="2022-2023">Licence 2 Informatique - Béjaïa, Algérie</etape>
+    <etape annee="2021-2022">Classe préparatoire (BAC+2) - Béjaïa, Algérie</etape>
+    <etape annee="2020-2021">Classe préparatoire (BAC+1) - Béjaïa, Algérie</etape>
+    <etape annee="2017-2020">Baccalauréat Série Mathématique - Mention 17/20</etape>
+  </formation>
+
+  <experience>
+    <poste>
+      <titre>Apprenti ingénieur développement et production</titre>
+      <entreprise>BNP PARIBAS</entreprise>
+      <lieu>Montreuil</lieu>
+      <periode>Depuis septembre 2023</periode>
+    </poste>
+  </experience>
+
+  <competences>
+    <categorie nom="Web">HTML, CSS, Bootstrap, JavaScript, PHP (initiation)</categorie>
+    <categorie nom="Programmation">Java (Swing, JavaFX), C, Python, Ocaml, Pascal, Assembleur (x86, LC-3)</categorie>
+    <categorie nom="Base de données">MySQL, PhpMyAdmin, Xampp</categorie>
+    <categorie nom="Réseaux">UDP, TCP, SSH</categorie>
+    <categorie nom="Outils">Eclipse, CodeBlocks, Git, VSCode, Office</categorie>
+  </competences>
+
+  <projets>
+    <projet>
+      <titre>BeYoSS Sokoban</titre>
+      <description>Implémentation graphique du jeu Sokoban avec JavaFX</description>
+      <periode>2023-2023</periode>
+    </projet>
+    <projet>
+      <titre>Pharmatech</titre>
+      <description>Application de gestion de pharmacie (HTML, Bootstrap, PHP, MySQL)</description>
+      <periode>2022-2022</periode>
+    </projet>
+    <projet>
+      <titre>WikiComptine</titre>
+      <description>Client-serveur TCP pour gestion de comptines</description>
+      <periode>2023-2023</periode>
+    </projet>
+  </projets>
+
+  <langues>
+    <langue nom="Kabyle">Langue maternelle</langue>
+    <langue nom="Arabe">Bilingue</langue>
+    <langue nom="Anglais">Courant</langue>
+  </langues>
+
+  <interets>
+    <interet>Jeux vidéo</interet>
+    <interet>Séries et films</interet>
+    <interet>Nature</interet>
+  </interets>
+</portfolio>
