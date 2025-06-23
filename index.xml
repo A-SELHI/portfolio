@@ -1,70 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="cv_bootstrap.xslt"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
 <portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:noNamespaceSchemaLocation="cv_schema.xsd">
 
-  <identite>
-    <nom>Abdelillah</nom>
-    <prenom>SELHI</prenom>
-    <age>23</age>
-    <email>abdelillahselhi@gmail.com</email>
-    <telephone>+3365172000</telephone>
-    <adresse>95370 Montigny-lès-Cormeilles</adresse>
-    <linkedin>@abdelillah_selhi</linkedin>
-  </identite>
+  <lang code="fr">
+    <identite>
+      <nom>Abdelillah</nom>
+      <prenom>SELHI</prenom>
+      <age>23</age>
+      <email>abdelillahselhi@gmail.com</email>
+      <telephone>+3365172000</telephone>
+      <adresse>95370 Montigny-lès-Cormeilles</adresse>
+      <linkedin>@abdelillah_selhi</linkedin>
+      <video>https://www.youtube.com/embed/DZIASl9q90s?si=KcSmicCX_46DTKG2</video>
+    </identite>
 
-  <formation>
-    <etape annee="2023-2026">Ingénieur informatique - Ecole Sup Galilée (Université Sorbonne Paris Nord)</etape>
-    <etape annee="2022-2023">Licence 2 Informatique - Béjaïa, Algérie</etape>
-    <etape annee="2021-2022">Classe préparatoire (BAC+2) - Béjaïa, Algérie</etape>
-    <etape annee="2020-2021">Classe préparatoire (BAC+1) - Béjaïa, Algérie</etape>
-    <etape annee="2017-2020">Baccalauréat Série Mathématique - Mention 17/20</etape>
-  </formation>
+    <formation>
+      <etape annee="2023-2026">Ingénieur informatique - Ecole Sup Galilée (Université Sorbonne Paris Nord)</etape>
+      <etape annee="2022-2023">Licence 2 Informatique - Béjaïa, Algérie</etape>
+      <etape annee="2021-2022">Classe préparatoire (BAC+2) - Béjaïa, Algérie</etape>
+      <etape annee="2020-2021">Classe préparatoire (BAC+1) - Béjaïa, Algérie</etape>
+      <etape annee="2017-2020">Baccalauréat Série Mathématique - Mention 17/20</etape>
+    </formation>
 
-  <experience>
-    <poste>
-      <titre>Apprenti ingénieur développement et production</titre>
-      <entreprise>BNP PARIBAS</entreprise>
-      <lieu>Montreuil</lieu>
-      <periode>Depuis septembre 2023</periode>
-    </poste>
-  </experience>
+    <experience>
+      <poste>
+        <titre>Apprenti ingénieur développement et production</titre>
+        <entreprise>BNP PARIBAS</entreprise>
+        <lieu>Montreuil</lieu>
+        <periode>Depuis septembre 2023</periode>
+      </poste>
+    </experience>
 
-  <competences>
-    <categorie nom="Web">HTML, CSS, Bootstrap, JavaScript, PHP (initiation)</categorie>
-    <categorie nom="Programmation">Java (Swing, JavaFX), C, Python, Ocaml, Pascal, Assembleur (x86, LC-3)</categorie>
-    <categorie nom="Base de données">MySQL, PhpMyAdmin, Xampp</categorie>
-    <categorie nom="Réseaux">UDP, TCP, SSH</categorie>
-    <categorie nom="Outils">Eclipse, CodeBlocks, Git, VSCode, Office</categorie>
-  </competences>
+    <competences>
+      <categorie nom="Web">HTML, CSS, Bootstrap, JavaScript, PHP (initiation)</categorie>
+      <categorie nom="Programmation">Java (Swing, JavaFX), C, Python, Ocaml, Pascal, Assembleur (x86, LC-3)</categorie>
+      <categorie nom="Base de données">MySQL, PhpMyAdmin, Xampp</categorie>
+      <categorie nom="Réseaux">UDP, TCP, SSH</categorie>
+      <categorie nom="Outils">Eclipse, CodeBlocks, Git, VSCode, Office</categorie>
+    </competences>
 
-  <projets>
-    <projet>
-      <titre>BeYoSS Sokoban</titre>
-      <description>Implémentation graphique du jeu Sokoban avec JavaFX</description>
-      <periode>2023-2023</periode>
-    </projet>
-    <projet>
-      <titre>Pharmatech</titre>
-      <description>Application de gestion de pharmacie (HTML, Bootstrap, PHP, MySQL)</description>
-      <periode>2022-2022</periode>
-    </projet>
-    <projet>
-      <titre>WikiComptine</titre>
-      <description>Client-serveur TCP pour gestion de comptines</description>
-      <periode>2023-2023</periode>
-    </projet>
-  </projets>
+    <projets>
+      <projet>
+        <titre>BeYoSS Sokoban</titre>
+        <description>Implémentation graphique du jeu Sokoban avec JavaFX</description>
+        <periode>2023-2023</periode>
+      </projet>
+      <projet>
+        <titre>Pharmatech</titre>
+        <description>Application de gestion de pharmacie (HTML, Bootstrap, PHP, MySQL)</description>
+        <periode>2022-2022</periode>
+      </projet>
+      <projet>
+        <titre>WikiComptine</titre>
+        <description>Client-serveur TCP pour gestion de comptines</description>
+        <periode>2023-2023</periode>
+      </projet>
+    </projets>
 
-  <langues>
-    <langue nom="Kabyle">Langue maternelle</langue>
-    <langue nom="Arabe">Bilingue</langue>
-    <langue nom="Anglais">Courant</langue>
-  </langues>
+    <langues>
+      <langue nom="Kabyle">Langue maternelle</langue>
+      <langue nom="Arabe">Bilingue</langue>
+      <langue nom="Anglais">Courant</langue>
+    </langues>
 
-  <interets>
-    <interet>Jeux vidéo</interet>
-    <interet>Séries et films</interet>
-    <interet>Nature</interet>
-  </interets>
+    <interets>
+      <interet>Jeux vidéo</interet>
+      <interet>Séries et films</interet>
+      <interet>Nature</interet>
+    </interets>
+  </lang>
+
+  <lang code="en">
+    <identite>
+      <nom>Abdelillah</nom>
+      <prenom>SELHI</prenom>
+      <age>23</age>
+      <email>abdelillahselhi@gmail.com</email>
+      <telephone>+3365172000</telephone>
+      <adresse>95370 Montigny-lès-Cormeilles</adresse>
+      <linkedin>@abdelillah_selhi</linkedin>
+      <video>https://www.youtube.com/embed/DZIASl9q90s?si=huRF5my-lO_cVsfq</video>
+    </identite>
+
+    <formation>
+      <etape annee="2023-2026">Computer Engineering - Ecole Sup Galilée (Université Sorbonne Paris Nord)</etape>
+      <etape annee="2022-2023">Bachelor Year 2 in Computer Science - Béjaïa, Algeria</etape>
+      <etape annee="2021-2022">Preparatory Class (Year 2) - Béjaïa, Algeria</etape>
+      <etape annee="2020-2021">Preparatory Class (Year 1) - Béjaïa, Algeria</etape>
+      <etape annee="2017-2020">Mathematics Baccalaureate - Grade: 17/20</etape>
+    </formation>
+
+    <experience>
+      <poste>
+        <titre>Apprentice Engineer in Development and Production</titre>
+        <entreprise>BNP PARIBAS</entreprise>
+        <lieu>Montreuil</lieu>
+        <periode>Since September 2023</periode>
+      </poste>
+    </experience>
+
+    <competences>
+      <categorie nom="Web">HTML, CSS, Bootstrap, JavaScript, PHP (beginner)</categorie>
+      <categorie nom="Programming">Java (Swing, JavaFX), C, Python, Ocaml, Pascal, Assembler (x86, LC-3)</categorie>
+      <categorie nom="Databases">MySQL, PhpMyAdmin, Xampp</categorie>
+      <categorie nom="Networking">UDP, TCP, SSH</categorie>
+      <categorie nom="Tools">Eclipse, CodeBlocks, Git, VSCode, Office</categorie>
+    </competences>
+
+    <projets>
+      <projet>
+        <titre>BeYoSS Sokoban</titre>
+        <description>Graphical implementation of the Sokoban game using JavaFX</description>
+        <periode>2023-2023</periode>
+      </projet>
+      <projet>
+        <titre>Pharmatech</titre>
+        <description>Pharmacy management application (HTML, Bootstrap, PHP, MySQL)</description>
+        <periode>2022-2022</periode>
+      </projet>
+      <projet>
+        <titre>WikiComptine</titre>
+        <description>TCP client-server application for managing nursery rhymes</description>
+        <periode>2023-2023</periode>
+      </projet>
+    </projets>
+
+    <langues>
+      <langue nom="Kabyle">Native language</langue>
+      <langue nom="Arabic">Bilingual</langue>
+      <langue nom="English">Fluent</langue>
+    </langues>
+
+    <interets>
+      <interet>Video games</interet>
+      <interet>TV shows and movies</interet>
+      <interet>Nature</interet>
+    </interets>
+  </lang>
+
+  <lang code="ar">
+    <identite>
+      <nom>عبد الإله</nom>
+      <prenom>سلحي</prenom>
+      <age>23</age>
+      <email>abdelillahselhi@gmail.com</email>
+      <telephone>+3365172000</telephone>
+      <adresse>95370 مونتيني-ليه-كورماي</adresse>
+      <linkedin>@abdelillah_selhi</linkedin>
+      <video>https://www.youtube.com/embed/DZIASl9q90s?si=JeCj9lh3XcFdmA3W</video>
+    </identite>
+
+    <formation>
+      <etape annee="2023-2026">مهندس في الإعلام الآلي - المدرسة العليا غاليلي (جامعة سوربون باريس نورد)</etape>
+      <etape annee="2022-2023">السنة الثانية ليسانس في الإعلام الآلي - بجاية، الجزائر</etape>
+      <etape annee="2021-2022">القسم التحضيري (السنة الثانية) - بجاية، الجزائر</etape>
+      <etape annee="2020-2021">القسم التحضيري (السنة الأولى) - بجاية، الجزائر</etape>
+      <etape annee="2017-2020">بكالوريا رياضيات - المعدل: 17/20</etape>
+    </formation>
+
+    <experience>
+      <poste>
+        <titre>متدرب مهندس في التطوير والإنتاج</titre>
+        <entreprise>BNP PARIBAS</entreprise>
+        <lieu>مونتروي</lieu>
+        <periode>منذ سبتمبر 2023</periode>
+      </poste>
+    </experience>
+
+    <competences>
+      <categorie nom="الويب">HTML، CSS، Bootstrap، JavaScript، PHP (مبتدئ)</categorie>
+      <categorie nom="البرمجة">Java (Swing، JavaFX)، C، Python، Ocaml، Pascal، Assembler (x86، LC-3)</categorie>
+      <categorie nom="قواعد البيانات">MySQL، PhpMyAdmin، Xampp</categorie>
+      <categorie nom="الشبكات">UDP، TCP، SSH</categorie>
+      <categorie nom="الأدوات">Eclipse، CodeBlocks، Git، VSCode، Office</categorie>
+    </competences>
+
+    <projets>
+      <projet>
+        <titre>BeYoSS Sokoban</titre>
+        <description>تنفيذ رسومي للعبة Sokoban باستخدام JavaFX</description>
+        <periode>2023-2023</periode>
+      </projet>
+      <projet>
+        <titre>Pharmatech</titre>
+        <description>تطبيق لإدارة الصيدليات (HTML، Bootstrap، PHP، MySQL)</description>
+        <periode>2022-2022</periode>
+      </projet>
+      <projet>
+        <titre>WikiComptine</titre>
+        <description>تطبيق خادم-عميل TCP لإدارة الأناشيد</description>
+        <periode>2023-2023</periode>
+      </projet>
+    </projets>
+
+    <langues>
+      <langue nom="القبايلية">اللغة الأم</langue>
+      <langue nom="العربية">ثنائي اللغة</langue>
+      <langue nom="الإنجليزية">بطلاقة</langue>
+    </langues>
+
+    <interets>
+      <interet>ألعاب الفيديو</interet>
+      <interet>المسلسلات والأفلام</interet>
+      <interet>الطبيعة</interet>
+    </interets>
+  </lang>
+
 </portfolio>
