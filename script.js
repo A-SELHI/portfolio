@@ -1,36 +1,42 @@
-window.addEventListener('DOMContentLoaded', function() {
-  function setHtmlLang(lang) {
-    document.documentElement.setAttribute('lang', lang);
-  }
+let currentLang = "fr";
 
-  function showLang(lang) {
-    document.querySelectorAll('.lang-block').forEach(block => {
-      block.style.display = (block.dataset.lang === lang) ? 'block' : 'none';
+function updateCV() {
+  Promise.all([
+    fetch('cv.xml').then(r => r.text()).then(str =>
+      new window.DOMParser().parseFromString(str, "text/xml")
+    ),
+    fetch('cv.xsl').then(r => r.text()).then(str =>
+      new window.DOMParser().parseFromString(str, "application/xml")
+    )
+  ]).then(([xml, xsl]) => {
+    const processor = new XSLTProcessor();
+    processor.importStylesheet(xsl);
+    processor.setParameter(null, "lang", currentLang);
+    const fragment = processor.transformToFragment(xml, document);
+    document.getElementById('cv-content').innerHTML = '';
+    document.getElementById('cv-content').appendChild(fragment);
+
+    document.querySelectorAll('.navbar__lang button').forEach(btn => {
+      btn.onclick = () => {
+        currentLang = btn.dataset.lang;
+        updateCV();
+      };
     });
-    document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-    setHtmlLang(lang);
-  }
 
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.onclick = function() {
-      showLang(this.dataset.lang);
-      setTimeout(animateSections, 350); // relance anim après changement de langue
-    };
+    document.querySelectorAll('.navbar__lang button').forEach(btn =>
+      btn.classList.toggle('active', btn.dataset.lang === currentLang)
+    );
+
+    document.documentElement.setAttribute('lang', currentLang);
+
+    if (currentLang === "ar") {
+      document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+    }
   });
+}
 
-  // Apparition animée des sections au scroll
-  function animateSections() {
-    document.querySelectorAll('.section').forEach(sec => {
-      const rect = sec.getBoundingClientRect();
-      if(rect.top < window.innerHeight - 80) {
-        sec.classList.add('visible');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', animateSections);
-  window.addEventListener('DOMContentLoaded', animateSections);
-
-  // show FR by default
-  showLang('fr');
+document.addEventListener('DOMContentLoaded', function() {
+  updateCV();
 });

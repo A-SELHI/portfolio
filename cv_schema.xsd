@@ -7,12 +7,45 @@
         <xs:element name="lang" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="titre" type="xs:string"/>
+              <xs:element name="ui">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="navbar">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="item" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="href" type="xs:string" use="required"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="labels">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="email" type="xs:string"/>
+                          <xs:element name="telephone" type="xs:string"/>
+                          <xs:element name="adresse" type="xs:string"/>
+                          <xs:element name="linkedin" type="xs:string"/>
+                          <xs:element name="learnmore" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
               <xs:element name="identite">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="nom" type="xs:string"/>
                     <xs:element name="prenom" type="xs:string"/>
-                    <xs:element name="age" type="xs:integer"/>
+                    <xs:element name="age" type="xs:string"/>
                     <xs:element name="email" type="xs:string"/>
                     <xs:element name="telephone" type="xs:string"/>
                     <xs:element name="adresse" type="xs:string"/>
@@ -21,7 +54,6 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
               <xs:element name="formation">
                 <xs:complexType>
                   <xs:sequence>
@@ -37,7 +69,6 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
               <xs:element name="experience">
                 <xs:complexType>
                   <xs:sequence>
@@ -54,23 +85,20 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
               <xs:element name="competences">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="categorie" maxOccurs="unbounded">
                       <xs:complexType>
-                        <xs:simpleContent>
-                          <xs:extension base="xs:string">
-                            <xs:attribute name="nom" type="xs:string" use="required"/>
-                          </xs:extension>
-                        </xs:simpleContent>
+                        <xs:sequence>
+                          <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="nom" type="xs:string" use="required"/>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
               <xs:element name="projets">
                 <xs:complexType>
                   <xs:sequence>
@@ -86,7 +114,6 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
               <xs:element name="langues">
                 <xs:complexType>
                   <xs:sequence>
@@ -102,7 +129,6 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
               <xs:element name="interets">
                 <xs:complexType>
                   <xs:sequence>
@@ -117,5 +143,4 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
 </xs:schema>

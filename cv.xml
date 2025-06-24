@@ -2,8 +2,28 @@
 <?xml-stylesheet type="text/xsl" href="cv.xsl"?>
 <portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:noNamespaceSchemaLocation="cv_schema.xsd">
-
+  <!-- FRANÇAIS -->
   <lang code="fr">
+    <titre>Portfolio</titre>
+    <ui>
+      <navbar>
+        <item href="#home">Accueil</item>
+        <item href="#about">À propos</item>
+        <item href="#formation">Formation</item>
+        <item href="#experience">Expérience</item>
+        <item href="#competences">Compétences</item>
+        <item href="#projects">Projets</item>
+        <item href="#langues">Langues</item>
+        <item href="#interets">Intérêts</item>
+      </navbar>
+      <labels>
+        <email>Email</email>
+        <telephone>Téléphone</telephone>
+        <adresse>Adresse</adresse>
+        <linkedin>LinkedIn</linkedin>
+        <learnmore>En savoir plus</learnmore>
+      </labels>
+    </ui>
     <identite>
       <nom>Abdelillah</nom>
       <prenom>SELHI</prenom>
@@ -14,7 +34,6 @@
       <linkedin>@abdelillah_selhi</linkedin>
       <video>https://www.youtube.com/embed/DZIASl9q90s?si=KcSmicCX_46DTKG2</video>
     </identite>
-
     <formation>
       <etape annee="2023-2026">Ingénieur informatique - Ecole Sup Galilée (Université Sorbonne Paris Nord)</etape>
       <etape annee="2022-2023">Licence 2 Informatique - Béjaïa, Algérie</etape>
@@ -22,7 +41,6 @@
       <etape annee="2020-2021">Classe préparatoire (BAC+1) - Béjaïa, Algérie</etape>
       <etape annee="2017-2020">Baccalauréat Série Mathématique - Mention 17/20</etape>
     </formation>
-
     <experience>
       <poste>
         <titre>Apprenti ingénieur développement et production</titre>
@@ -31,15 +49,40 @@
         <periode>Depuis septembre 2023</periode>
       </poste>
     </experience>
-
     <competences>
-      <categorie nom="Web">HTML, CSS, Bootstrap, JavaScript, PHP (initiation)</categorie>
-      <categorie nom="Programmation">Java (Swing, JavaFX), C, Python, Ocaml, Pascal, Assembleur (x86, LC-3)</categorie>
-      <categorie nom="Base de données">MySQL, PhpMyAdmin, Xampp</categorie>
-      <categorie nom="Réseaux">UDP, TCP, SSH</categorie>
-      <categorie nom="Outils">Eclipse, CodeBlocks, Git, VSCode, Office</categorie>
+      <categorie nom="Web">
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>Bootstrap</skill>
+        <skill>JavaScript</skill>
+        <skill>PHP (initiation)</skill>
+      </categorie>
+      <categorie nom="Programmation">
+        <skill>Java (Swing, JavaFX)</skill>
+        <skill>C</skill>
+        <skill>Python</skill>
+        <skill>Ocaml</skill>
+        <skill>Pascal</skill>
+        <skill>Assembleur (x86, LC-3)</skill>
+      </categorie>
+      <categorie nom="Base de données">
+        <skill>MySQL</skill>
+        <skill>PhpMyAdmin</skill>
+        <skill>Xampp</skill>
+      </categorie>
+      <categorie nom="Réseaux">
+        <skill>UDP</skill>
+        <skill>TCP</skill>
+        <skill>SSH</skill>
+      </categorie>
+      <categorie nom="Outils">
+        <skill>Eclipse</skill>
+        <skill>CodeBlocks</skill>
+        <skill>Git</skill>
+        <skill>VSCode</skill>
+        <skill>Office</skill>
+      </categorie>
     </competences>
-
     <projets>
       <projet>
         <titre>BeYoSS Sokoban</titre>
@@ -57,21 +100,39 @@
         <periode>2023-2023</periode>
       </projet>
     </projets>
-
     <langues>
       <langue nom="Kabyle">Langue maternelle</langue>
       <langue nom="Arabe">Bilingue</langue>
       <langue nom="Anglais">Courant</langue>
     </langues>
-
     <interets>
       <interet>Jeux vidéo</interet>
       <interet>Séries et films</interet>
       <interet>Nature</interet>
     </interets>
   </lang>
-
+  <!-- ENGLISH -->
   <lang code="en">
+    <titre>Portfolio</titre>
+    <ui>
+      <navbar>
+        <item href="#home">Home</item>
+        <item href="#about">About</item>
+        <item href="#formation">Education</item>
+        <item href="#experience">Experience</item>
+        <item href="#competences">Skills</item>
+        <item href="#projects">Projects</item>
+        <item href="#langues">Languages</item>
+        <item href="#interets">Interests</item>
+      </navbar>
+      <labels>
+        <email>Email</email>
+        <telephone>Phone</telephone>
+        <adresse>Address</adresse>
+        <linkedin>LinkedIn</linkedin>
+        <learnmore>Learn more</learnmore>
+      </labels>
+    </ui>
     <identite>
       <nom>Abdelillah</nom>
       <prenom>SELHI</prenom>
@@ -82,7 +143,6 @@
       <linkedin>@abdelillah_selhi</linkedin>
       <video>https://www.youtube.com/embed/DZIASl9q90s?si=huRF5my-lO_cVsfq</video>
     </identite>
-
     <formation>
       <etape annee="2023-2026">Computer Engineering - Ecole Sup Galilée (Université Sorbonne Paris Nord)</etape>
       <etape annee="2022-2023">Bachelor Year 2 in Computer Science - Béjaïa, Algeria</etape>
@@ -90,7 +150,6 @@
       <etape annee="2020-2021">Preparatory Class (Year 1) - Béjaïa, Algeria</etape>
       <etape annee="2017-2020">Mathematics Baccalaureate - Grade: 17/20</etape>
     </formation>
-
     <experience>
       <poste>
         <titre>Apprentice Engineer in Development and Production</titre>
@@ -99,15 +158,40 @@
         <periode>Since September 2023</periode>
       </poste>
     </experience>
-
     <competences>
-      <categorie nom="Web">HTML, CSS, Bootstrap, JavaScript, PHP (beginner)</categorie>
-      <categorie nom="Programming">Java (Swing, JavaFX), C, Python, Ocaml, Pascal, Assembler (x86, LC-3)</categorie>
-      <categorie nom="Databases">MySQL, PhpMyAdmin, Xampp</categorie>
-      <categorie nom="Networking">UDP, TCP, SSH</categorie>
-      <categorie nom="Tools">Eclipse, CodeBlocks, Git, VSCode, Office</categorie>
+      <categorie nom="Web">
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>Bootstrap</skill>
+        <skill>JavaScript</skill>
+        <skill>PHP (beginner)</skill>
+      </categorie>
+      <categorie nom="Programming">
+        <skill>Java (Swing, JavaFX)</skill>
+        <skill>C</skill>
+        <skill>Python</skill>
+        <skill>Ocaml</skill>
+        <skill>Pascal</skill>
+        <skill>Assembler (x86, LC-3)</skill>
+      </categorie>
+      <categorie nom="Databases">
+        <skill>MySQL</skill>
+        <skill>PhpMyAdmin</skill>
+        <skill>Xampp</skill>
+      </categorie>
+      <categorie nom="Networking">
+        <skill>UDP</skill>
+        <skill>TCP</skill>
+        <skill>SSH</skill>
+      </categorie>
+      <categorie nom="Tools">
+        <skill>Eclipse</skill>
+        <skill>CodeBlocks</skill>
+        <skill>Git</skill>
+        <skill>VSCode</skill>
+        <skill>Office</skill>
+      </categorie>
     </competences>
-
     <projets>
       <projet>
         <titre>BeYoSS Sokoban</titre>
@@ -125,21 +209,39 @@
         <periode>2023-2023</periode>
       </projet>
     </projets>
-
     <langues>
       <langue nom="Kabyle">Native language</langue>
       <langue nom="Arabic">Bilingual</langue>
       <langue nom="English">Fluent</langue>
     </langues>
-
     <interets>
       <interet>Video games</interet>
       <interet>TV shows and movies</interet>
       <interet>Nature</interet>
     </interets>
   </lang>
-
+  <!-- ARABE -->
   <lang code="ar">
+    <titre>بورتفوليو</titre>
+    <ui>
+      <navbar>
+        <item href="#home">الرئيسية</item>
+        <item href="#about">حول</item>
+        <item href="#formation">التعليم</item>
+        <item href="#experience">الخبرة</item>
+        <item href="#competences">المهارات</item>
+        <item href="#projects">المشاريع</item>
+        <item href="#langues">اللغات</item>
+        <item href="#interets">الاهتمامات</item>
+      </navbar>
+      <labels>
+        <email>البريد الإلكتروني</email>
+        <telephone>الهاتف</telephone>
+        <adresse>العنوان</adresse>
+        <linkedin>لينكد إن</linkedin>
+        <learnmore>اعرف المزيد</learnmore>
+      </labels>
+    </ui>
     <identite>
       <nom>عبد الإله</nom>
       <prenom>سلحي</prenom>
@@ -150,7 +252,6 @@
       <linkedin>@abdelillah_selhi</linkedin>
       <video>https://www.youtube.com/embed/DZIASl9q90s?si=JeCj9lh3XcFdmA3W</video>
     </identite>
-
     <formation>
       <etape annee="2023-2026">مهندس في الإعلام الآلي - المدرسة العليا غاليلي (جامعة سوربون باريس نورد)</etape>
       <etape annee="2022-2023">السنة الثانية ليسانس في الإعلام الآلي - بجاية، الجزائر</etape>
@@ -158,7 +259,6 @@
       <etape annee="2020-2021">القسم التحضيري (السنة الأولى) - بجاية، الجزائر</etape>
       <etape annee="2017-2020">بكالوريا رياضيات - المعدل: 17/20</etape>
     </formation>
-
     <experience>
       <poste>
         <titre>متدرب مهندس في التطوير والإنتاج</titre>
@@ -167,15 +267,40 @@
         <periode>منذ سبتمبر 2023</periode>
       </poste>
     </experience>
-
     <competences>
-      <categorie nom="الويب">HTML، CSS، Bootstrap، JavaScript، PHP (مبتدئ)</categorie>
-      <categorie nom="البرمجة">Java (Swing، JavaFX)، C، Python، Ocaml، Pascal، Assembler (x86، LC-3)</categorie>
-      <categorie nom="قواعد البيانات">MySQL، PhpMyAdmin، Xampp</categorie>
-      <categorie nom="الشبكات">UDP، TCP، SSH</categorie>
-      <categorie nom="الأدوات">Eclipse، CodeBlocks، Git، VSCode، Office</categorie>
+      <categorie nom="الويب">
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>Bootstrap</skill>
+        <skill>JavaScript</skill>
+        <skill>PHP (مبتدئ)</skill>
+      </categorie>
+      <categorie nom="البرمجة">
+        <skill>Java (Swing، JavaFX)</skill>
+        <skill>C</skill>
+        <skill>Python</skill>
+        <skill>Ocaml</skill>
+        <skill>Pascal</skill>
+        <skill>Assembler (x86، LC-3)</skill>
+      </categorie>
+      <categorie nom="قواعد البيانات">
+        <skill>MySQL</skill>
+        <skill>PhpMyAdmin</skill>
+        <skill>Xampp</skill>
+      </categorie>
+      <categorie nom="الشبكات">
+        <skill>UDP</skill>
+        <skill>TCP</skill>
+        <skill>SSH</skill>
+      </categorie>
+      <categorie nom="الأدوات">
+        <skill>Eclipse</skill>
+        <skill>CodeBlocks</skill>
+        <skill>Git</skill>
+        <skill>VSCode</skill>
+        <skill>Office</skill>
+      </categorie>
     </competences>
-
     <projets>
       <projet>
         <titre>BeYoSS Sokoban</titre>
@@ -193,18 +318,15 @@
         <periode>2023-2023</periode>
       </projet>
     </projets>
-
     <langues>
       <langue nom="القبايلية">اللغة الأم</langue>
       <langue nom="العربية">ثنائي اللغة</langue>
       <langue nom="الإنجليزية">بطلاقة</langue>
     </langues>
-
     <interets>
       <interet>ألعاب الفيديو</interet>
       <interet>المسلسلات والأفلام</interet>
       <interet>الطبيعة</interet>
     </interets>
   </lang>
-
 </portfolio>
