@@ -25,7 +25,14 @@
 
       <div class="navbar">
         <div class="navbar__inner">
-          <div class="navbar__brand"><a href="#"><xsl:value-of select="titre"/></a></div>
+          <div class="navbar__brand">
+            <a href="#"><xsl:value-of select="titre"/></a>
+          </div>
+          <button class="navbar__toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="nav-list">
             <xsl:for-each select="ui/navbar/item">
               <a href="{@href}" class="nav-link"><xsl:value-of select="."/></a>

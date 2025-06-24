@@ -34,6 +34,23 @@ function updateCV() {
     } else {
       document.documentElement.setAttribute('dir', 'ltr');
     }
+
+    // Hamburger menu responsive
+    const navToggle = document.querySelector('.navbar__toggle');
+    const navList = document.querySelector('.nav-list');
+    if (navToggle && navList) {
+      navToggle.onclick = () => {
+        navList.classList.toggle('active');
+        navToggle.classList.toggle('open');
+      };
+      // Ferme le menu quand on clique sur un lien
+      navList.querySelectorAll('a').forEach(link => {
+        link.onclick = () => {
+          navList.classList.remove('active');
+          navToggle.classList.remove('open');
+        };
+      });
+    }
   });
 }
 

@@ -319,3 +319,58 @@ main {
 [dir="rtl"] .skills__badges {
   justify-content: flex-end;
 }
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  gap: 7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 201;
+}
+.navbar__toggle span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--clr-dark);
+  border-radius: 2px;
+  transition: .3s;
+}
+.navbar__toggle.open span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+.navbar__toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar__toggle.open span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .navbar__inner {
+    flex-wrap: wrap;
+  }
+  .navbar__toggle {
+    display: flex;
+    margin-left: 10px;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0; right: 0; top: 60px;
+    background: var(--clr-light);
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    z-index: 200;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .navbar__lang {
+    margin-top: 8px;
+  }
+}
