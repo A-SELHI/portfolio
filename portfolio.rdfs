@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cv="https://abdelillah-selhi.fr/vocab#">
+
+    <rdfs:Class rdf:about="foaf:Person">
+        <rdfs:label>Personne</rdfs:label>
+        <rdfs:comment>Une personne</rdfs:comment>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:about="foaf:name">
+        <rdfs:label>Nom complet</rdfs:label>
+        <rdfs:comment>Le nom complet de la personne</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Person"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:about="foaf:mbox">
+        <rdfs:label>Email</rdfs:label>
+        <rdfs:comment>L'adresse e-mail de la personne</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Person"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:about="foaf:phone">
+        <rdfs:label>Téléphone</rdfs:label>
+        <rdfs:comment>Numéro de téléphone de la personne</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Person"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:about="foaf:address">
+        <rdfs:label>Adresse</rdfs:label>
+        <rdfs:comment>Adresse de la personne</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Person"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:about="foaf:age">
+        <rdfs:label>Âge</rdfs:label>
+        <rdfs:comment>Âge de la personne</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Person"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:about="foaf:homepage">
+        <rdfs:label>Page personnelle</rdfs:label>
+        <rdfs:comment>Homepage/LinkedIn de la personne</rdfs:comment>
+        <rdfs:domain rdf:resource="foaf:Person"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:about="foaf:Project">
+        <rdfs:label>Projet</rdfs:label>
+        <rdfs:comment>Projet informatique ou scolaire</rdfs:comment>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:about="dc:title">
+        <rdfs:label>Titre du projet</rdfs:label>
+        <rdfs:domain rdf:resource="foaf:Project"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+    <rdfs:Property rdf:about="dc:description">
+        <rdfs:label>Description du projet</rdfs:label>
+        <rdfs:domain rdf:resource="foaf:Project"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+    <rdfs:Property rdf:about="cv:periode">
+        <rdfs:label>Période du projet</rdfs:label>
+        <rdfs:domain rdf:resource="foaf:Project"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:about="cv:Skill">
+        <rdfs:label>Compétence</rdfs:label>
+        <rdfs:comment>Une compétence technique ou outil</rdfs:comment>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:about="cv:skillName">
+        <rdfs:label>Nom de la compétence</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Skill"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+    <rdfs:Property rdf:about="cv:skillCategory">
+        <rdfs:label>Catégorie de la compétence</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Skill"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:about="cv:Language">
+        <rdfs:label>Langue</rdfs:label>
+        <rdfs:comment>Une langue parlée par la personne</rdfs:comment>
+    </rdfs:Class>
+    <rdfs:Property rdf:about="cv:languageLevel">
+        <rdfs:label>Niveau de la langue</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Language"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:about="cv:Experience">
+        <rdfs:label>Expérience professionnelle</rdfs:label>
+        <rdfs:comment>Expérience en entreprise</rdfs:comment>
+    </rdfs:Class>
+    <rdfs:Property rdf:about="cv:jobTitle">
+        <rdfs:label>Titre du poste</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Experience"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+    <rdfs:Property rdf:about="cv:company">
+        <rdfs:label>Entreprise</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Experience"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+    <rdfs:Property rdf:about="cv:workPlace">
+        <rdfs:label>Lieu</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Experience"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+    <rdfs:Property rdf:about="cv:workPeriod">
+        <rdfs:label>Période</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Experience"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:about="cv:Education">
+        <rdfs:label>Formation</rdfs:label>
+        <rdfs:comment>Un diplôme ou une étape d'étude</rdfs:comment>
+    </rdfs:Class>
+    <rdfs:Property rdf:about="cv:educationTitle">
+        <rdfs:label>Intitulé de la formation</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Education"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+    <rdfs:Property rdf:about="cv:educationYear">
+        <rdfs:label>Année ou période</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Education"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:about="cv:Interest">
+        <rdfs:label>Centre d'intérêt</rdfs:label>
+        <rdfs:comment>Passion, activité ou loisir</rdfs:comment>
+    </rdfs:Class>
+    <rdfs:Property rdf:about="cv:interestName">
+        <rdfs:label>Nom de l'intérêt</rdfs:label>
+        <rdfs:domain rdf:resource="cv:Interest"/>
+        <rdfs:range rdfs:Literal/>
+    </rdfs:Property>
+
+</rdf:RDF>
